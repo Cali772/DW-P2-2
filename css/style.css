@@ -27,6 +27,10 @@ nav {
     padding: 0 40px;
 }
 
+#research
+{
+    margin-bottom: 1%;
+}
 
 /*Section recherche*/
 #location_icon {
@@ -68,7 +72,8 @@ nav {
     color: black;
     font-weight: bold;
     align-items: center;
-    gap: 35px
+    gap: 35px;
+    margin-top: 1%;
 }
 
 .filter_item {
@@ -76,8 +81,8 @@ nav {
     gap: 15px;
     align-items: center;
     padding-right: 15px;
-    border: solid 3px lightgray;
-    border-radius: 25px;
+    border: solid 2px lightgray;
+    border-radius: 20px;
 }
 
 .filter_item img {
@@ -393,7 +398,7 @@ footer div h1 {
 
 
 /** Responsive **/
-@media (max-width: 992px)/*Mode Tablette*/
+@media (max-width: 992px)
 {
     body
     {
@@ -492,25 +497,39 @@ footer div h1 {
     {
             padding: 0px 5px;
     }
+    #research
+    {
+        margin-top: 2%;
+        margin-bottom: 5%;
+    }
     .titre
     {
-            font-size: 15px;
+            font-size: 19px;
+    }
+    #location
+    {
+            margin-left: 20%;
     }
     #filter_container 
     {
-            gap: 10px;      
+            gap: 10px;
+            flex-wrap: wrap;   
+            margin-top: 5%;              
+    }
+    #filter_container p
+    {
+        font-size: 20px;
     }
     .filter_item 
     {
-            gap: 10px;
-            padding-right: 10px;
+            gap: 30px;
+            padding-right: 30px;
             border-radius: 20px;
-            font-size: 13px;
+            font-size: 20px;
     }
         
     .filter_item img 
     {
-            width: 30px;
             padding: 5px;
             box-sizing: border-box;
     }
@@ -528,7 +547,7 @@ footer div h1 {
     #populaires_container_elements 
     {
             row-gap: 30px;
-            width: 480px;
+            width: 400px;
             height: 480px;
     }
     #activites_container 
@@ -537,18 +556,22 @@ footer div h1 {
     }
     #activites_container_elements 
     {       
-            grid-template-columns: repeat(4,25%);
+           /* grid-template-columns: repeat(4,25%);
             display: grid;
             grid-template-columns: 27% 23% 30% 27%;
             grid-template-rows: 150px 150px;
             gap: 5px;
-            font-size: x-small;
+            font-size: x-small;*/
+            display:flex;
+            flex-direction: column;
+            height: 1500px;
+            font-size: medium;
     }
     .activites_container_item_info
     {       
             width: 100%;
-            height: 40px;
-            top: -40px;
+            height: 50px;
+            top: -50px;
             padding: 5px 5px;
     }
     .container
@@ -562,9 +585,14 @@ footer div h1 {
     }
     footer
     {
-            padding: 20px 40px;
-            column-gap: 10%;
-            font-size: 14px;
+            /*padding: 30px 30%;*/
+           
+            font-size: 22px;
+            align-content: center;
+            flex-wrap: wrap;
+            text-align: center;
+            
+            
     }
     .footer_category
     {
