@@ -19,12 +19,15 @@ a:hover {
     color: #0065FC;
 }
 
+#header{
+    display: flex;
+}
 nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 40px;
+    padding-left: 70%;
 }
 
 #research
@@ -67,30 +70,88 @@ nav {
 
 
 /*Filtres */
-#filter_container {
+#filter_container{
     display: flex;
-    color: black;
-    font-weight: bold;
+    flex-wrap: wrap;
+    padding-top: 30px;
     align-items: center;
-    gap: 35px;
-    margin-top: 1%;
+    font-weight: 800;
+}
+h3{
+    margin-right: 10px;
 }
 
-.filter_item {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    padding-right: 15px;
-    border: solid 2px lightgray;
+.icon1{
+    border: 2px solid #cfc9c9;
+    border-radius: 20px;;
+    border-left: transparent;
+    font-size: 17px;
+    margin-right: 25px;
+    margin-left: 20px;
+    padding: 12px;
+    padding-left: 0px;
+}
+#money{
+    color: #0065FC;
+    background-color: #DEEBFF;
     border-radius: 20px;
+    font-size: 18px;
+    margin-right: 10px;
+    padding: 15px;
 }
-
-.filter_item img {
-    width: 30px;
-    padding: 5px;
-    background-color: rgba(126, 204, 255, 0.6);
-    border-radius: 50%;
-    box-sizing: border-box;
+.icon2{  border: 2px solid #cfc9c9;
+    border-radius: 20px;
+    border-left: transparent;
+    font-size: 17px;
+    margin-right: 25px;
+    padding: 12px;
+    padding-left: 0px;
+}
+#family{
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border-radius: 20px;
+    font-size: 18px;
+    margin-right: 10px;
+    padding: 15px;
+}
+.icon3{  border: 2px solid #cfc9c9;
+    border-radius: 20px;
+    border-left: transparent;
+    font-size: 17px;
+    margin-right: 25px;
+    padding: 12px;
+    padding-left: 0px;
+}
+#heart{
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border-radius: 20px;
+    font-size: 18px;
+    margin-right: 10px;
+    padding: 15px;
+}
+.icon4{  border: 2px solid #cfc9c9;
+    border-radius: 20px;
+    border-left: transparent;
+    font-size: 17px;
+    margin-right: 25px;
+    padding: 12px;
+    padding-left: 0%;
+}
+#dog{
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border-radius: 20px;
+    font-size: 18px;
+    margin-right: 10px;
+    padding: 15px;
+}
+.filter-button {
+    margin-left:25px;
+}
+.filter-button :hover{
+    background-color:#cfc9c9;
 }
 
 
@@ -341,33 +402,6 @@ nav {
     font-weight: bold;
 }
 
-/*.activities_container_item :first-child
-{
-   height: 10px; 
-}*/
-/*.activites_container_item:nth-child(1) { 
-    width: 330px;
-    height: 410px;}
-.activites_container_item:nth-child(2)
-{ 
-    width: 330px;
-    height: 210px;}
-.activites_container_item:nth-child(3)
-{ 
-    width: 330px;
-    height: 150px;}
-.activites_container_item:nth-child(4)
-{ 
-    width: 330px;
-    height: 410px;}
-.activites_container_item:nth-child(5)
-{ 
-    width: 330px;
-    height: 210px;}
-.activites_container_item:nth-child(6)
-{ 
-    width: 330px;
-    height: 210px;} */
     /*Footer*/
 ul {
     list-style: none;
@@ -493,6 +527,10 @@ footer div h1 {
 
 {
 
+    body
+    {
+        margin: 20px;
+    }
     nav 
     {
             padding: 0px 5px;
@@ -516,22 +554,9 @@ footer div h1 {
             flex-wrap: wrap;   
             margin-top: 5%;              
     }
-    #filter_container p
+    #filter_container h3
     {
         font-size: 20px;
-    }
-    .filter_item 
-    {
-            gap: 30px;
-            padding-right: 30px;
-            border-radius: 20px;
-            font-size: 20px;
-    }
-        
-    .filter_item img 
-    {
-            padding: 5px;
-            box-sizing: border-box;
     }
 
     .hebergements_container_item 
@@ -556,12 +581,6 @@ footer div h1 {
     }
     #activites_container_elements 
     {       
-           /* grid-template-columns: repeat(4,25%);
-            display: grid;
-            grid-template-columns: 27% 23% 30% 27%;
-            grid-template-rows: 150px 150px;
-            gap: 5px;
-            font-size: x-small;*/
             display:flex;
             flex-direction: column;
             height: 1500px;

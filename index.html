@@ -15,18 +15,20 @@
 <div id="bloc_page">
 	<header>
 		<!-- Menu de navigation -->
-		<nav>
+		<div id="header">
 			<div id="logo">
 				<img src="./images/logo/Booki.png" alt="Logo de Booki"/>
 
 			</div>
+			<nav>
 			<div id="nav_link">
 				
-					<a href="#">Hébergements</a>
-					<a href="#">Activités</a>
+					<a href="#hebergements_container">Hébergements</a>
+					<a href="#activites_container">Activités</a>
 				
 			</div>
-		</nav>
+			</nav>
+		</div>
 
 		<section id="research">
 			<div class="titre">
@@ -47,32 +49,22 @@
 	</section>
 
 	<div id="filter_container">
-		<p>Filtres</p>
 
-		<a href="#">
-			<div class="filter_item">
-				<i class="fa-solid fa-money-bill-wave"></i>
-				Economique
-			</div>
-		</a>
-		<a href="#">
-			<div class="filter_item">
-				<img src="./images/icon/family.png" alt="icon2">
-				Familial
-			</div>
-		</a>
-		<a href="#">
-			<div class="filter_item">
-				<img src="./images/icon/coeur.png" alt="icon3">
-				Romantique
-			</div>
-		</a>
-		<a href="#">
-			<div class="filter_item">
-				<img src="./images/icon/Dog1.png" alt="icon4">
-				Animaux autorisés
-			</div>
-		</a>
+		<h3>Filtres</h3>
+
+		<a class="filter-button"><span class="icon1"><i id="money"
+					class="fa-solid fa-money-bill-wave"></i>Économique</span></a>
+
+		<a class="filter-button"><span class="icon2"><i id="family"
+					class="fa-solid fa-child-reaching"></i>Familial</span></a>
+
+		<a class="filter-button"><span class="icon3"><i id="heart"
+					class="fa-solid fa-heart"></i>Romantique</span></a>
+
+		<a class="filter-button"><span class="icon4"><i id="dog" 
+					class="fa-solid fa-dog"></i>Animaux
+				autorisés</span></a>
+
 	</div>
 
 	<div id="info">
