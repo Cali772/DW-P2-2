@@ -68,6 +68,11 @@ nav {
     font-weight: bold;
 }
 
+input::placeholder
+{
+    color: black;
+    font-size: 15px;
+}
 
 /*Filtres */
 #filter_container{
@@ -552,10 +557,6 @@ footer div h1 {
     {
             font-size: 19px;
     }
-    #location
-    {
-            margin-left: 20%;
-    }
     #filter_container 
     {
             gap: 5px 0px;
@@ -575,6 +576,10 @@ footer div h1 {
         margin-left: 0px;
     }
 
+    #location
+    {
+        display: flex;
+    }
 
     #hebergements_container{
         background-color: white;
