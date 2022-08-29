@@ -543,7 +543,7 @@ footer div h1 {
         flex-direction: column;
     }
     #logo{
-        justify-content: center;
+        padding-left: 28%;
     }
     nav {
             font-weight: 500;
