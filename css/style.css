@@ -254,6 +254,7 @@ h3{
 .hebergements_container_item_info h2 {
     margin: 0;
     font-size: 1.2em;
+    word-wrap: break-word;
 }
 
 .hebergements_container_item_info p {
@@ -270,7 +271,7 @@ h3{
 
 
 #populaires_container {
-    width: 23%;
+    width: 30%;
     background-color: #e1e1e1;
     padding: 10px 50px 35px;
     border-radius: 20px;
@@ -282,7 +283,7 @@ h3{
     flex-direction: column;
     row-gap: 30px;
     width: 100%;
-    height: 450px;
+    height: 100%;
 }
 
 #populaires_container_header {
@@ -627,10 +628,7 @@ footer div h1 {
             width: 100%;
             height: 480px;
     }
-    #activites_container 
-    {
-            padding: 20px 30px;
-    }
+   
     #activites_container_elements 
     {       
             display:flex;
