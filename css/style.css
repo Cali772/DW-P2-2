@@ -5,7 +5,6 @@
 }
 
 body {
-    margin-left: 40px;
     font-family: var(--font-family);
     background-color: var(--background-color);
     margin-top: 0px;
@@ -30,7 +29,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-left: 70%;
+    padding-left: 60%;
 }
 nav a 
 {
@@ -105,7 +104,7 @@ h3{
 
 .icon1{
     border: 2px solid #cfc9c9;
-    border-radius: 20px;;
+    border-radius: 50px;;
     border-left: transparent;
     font-size: 17px;
     margin-right: 25px;
@@ -116,13 +115,13 @@ h3{
 #money{
     color: #0065FC;
     background-color: #DEEBFF;
-    border-radius: 20px;
+    border-radius: 50px;
     font-size: 18px;
     margin-right: 10px;
     padding: 15px;
 }
 .icon2{  border: 2px solid #cfc9c9;
-    border-radius: 20px;
+    border-radius: 50px;
     border-left: transparent;
     font-size: 17px;
     margin-right: 25px;
@@ -132,13 +131,13 @@ h3{
 #family{
     color: #0065FC;
     background-color: #DEEBFF;
-    border-radius: 20px;
-    font-size: 18px;
+    border-radius: 50px;
+    font-size: 19px;
     margin-right: 10px;
     padding: 15px;
 }
 .icon3{  border: 2px solid #cfc9c9;
-    border-radius: 20px;
+    border-radius: 50px;
     border-left: transparent;
     font-size: 17px;
     margin-right: 25px;
@@ -148,13 +147,13 @@ h3{
 #heart{
     color: #0065FC;
     background-color: #DEEBFF;
-    border-radius: 20px;
+    border-radius: 50px;
     font-size: 18px;
     margin-right: 10px;
     padding: 15px;
 }
 .icon4{  border: 2px solid #cfc9c9;
-    border-radius: 20px;
+    border-radius: 50px;
     border-left: transparent;
     font-size: 17px;
     margin-right: 25px;
@@ -164,7 +163,7 @@ h3{
 #dog{
     color: #0065FC;
     background-color: #DEEBFF;
-    border-radius: 20px;
+    border-radius: 50px;
     font-size: 18px;
     margin-right: 10px;
     padding: 15px;
@@ -187,8 +186,7 @@ h3{
 
 .container {
     display: flex;
-    justify-content: space-between;
-    gap: 10px;
+    gap: 30px;
 }
 
 /* Hébergements */
@@ -196,8 +194,8 @@ h3{
     background-color: #F2F2F2;
     padding: 10px 60px 10px;
     border-radius: 20px;
-    /*width: calc(100% - 40%);*/
-     
+    width: 60%;
+    max-width: 1000px;
 }
 
 #hebergements_container_elements {
@@ -235,9 +233,9 @@ h3{
 .hebergements_container_item img {
     position: absolute;
     min-width: 100%;
-    min-height: 90%;
+    min-height: 100%;
     width: 100%;
-    height: 90%;
+    height: 100%;
     margin: auto;
 }
 
@@ -256,7 +254,7 @@ h3{
 
 .hebergements_container_item_info h2 {
     margin: 0;
-    font-size: 1.2em;
+    font-size: medium;
     word-wrap: break-word;
 }
 
@@ -276,7 +274,7 @@ h3{
 #populaires_container {
     width: 30%;
     background-color: #F2F2F2;
-    padding: 10px 50px 35px;
+    padding: 10px 20px 35px;
     border-radius: 20px;
     box-sizing: border-box;
 }
@@ -322,7 +320,7 @@ h3{
 .populaires_container_item_info {
     position: relative;
     background-color: var(--background-color);
-    width: 60%;
+    width: 55%;
     height: 100%;
     left: 40%;
     box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.2);
@@ -338,7 +336,8 @@ h3{
 
 .populaires_container_item_info h2 {
     margin: 0;
-    font-size: 1.2em;
+    font-size: medium;
+    overflow-wrap: break-word;
 }
 
 .populaires_container_item_info p {
@@ -361,7 +360,7 @@ h3{
 
 /* Actvité*/
 #activites_container {
-    padding: 10px 40px;
+    padding: 0px;
 }
 
 #activites_container_elements {
@@ -451,7 +450,7 @@ footer div h1 {
     }
     nav 
     {
-            padding: 10px;
+            padding: 0px;
             margin-left: auto;
     }
     .titre
@@ -495,7 +494,7 @@ footer div h1 {
     }
     #activites_container 
     {
-            padding: 30px 20px;
+            padding: 0px;
             display: flex;
             flex-direction: column;
     }
@@ -526,7 +525,7 @@ footer div h1 {
     }
     footer
     {
-            padding: 20px 40px;
+            padding: 0px;
             column-gap: 10%;
             font-size: 14px;
     }
@@ -543,7 +542,7 @@ footer div h1 {
 
     body
     {
-        margin: 10px;
+        margin: 0px;
     }
     #header{
         display: flex;
@@ -557,6 +556,7 @@ footer div h1 {
             font-size: 105%;
             margin: 0;
             width: 100%;
+            padding: 0px;
         }
     nav > a {
             border-bottom: 3px solid #c3c3c34f;
@@ -606,21 +606,15 @@ footer div h1 {
         justify-content: center;
     }
 
-    /*.container
-    {
-        display: flex;
-        flex-wrap: wrap-reverse;  
-     }*/
-
     #hebergements_container{
         background-color: white;
-        padding: 20px;
+        padding: 0px;
         width: 100%;
     }
     .hebergements_container_item 
     {
-            height: 280px;
-            width: 100%;
+            height: 300px;
+            width: 90%;
     }
     .hebergements_container_item_info 
     {
@@ -656,7 +650,7 @@ footer div h1 {
     }
     .container
     {       
-            flex-direction: column;
+            flex-direction: column-reverse;
     }
 
     footer
@@ -664,8 +658,9 @@ footer div h1 {
 
             font-size: 22px;
             align-content: center;
-            flex-wrap: wrap            
-    }
+            flex-wrap: wrap;
+            padding: 0px;
+        }
     .footer_category
     {
             width: 100%;
