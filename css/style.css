@@ -3,6 +3,13 @@
     --background-color: #fafafa;
     --primary-color: #372df3;
 }
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    border: none;
+}
 
 body {
     font-family: var(--font-family);
@@ -18,25 +25,32 @@ a {
 a:hover {
     color: #0065FC;
 }
-/*bloc_page{
+#bloc_page{
     padding: 0px 53.5px 0px 53.5px;
-}*/
+}
 #header{
     display: flex;
+    justify-content: space-between;
 }
+#logo img{
+    width: 104px;
+    height: 45px;
+    margin-left: 3.5px;
+    padding: 0px 53.5px 0px 53.5px;
+    margin-top: 20px;
+}
+
 nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-left: 60%;
 }
 nav a 
 {
     padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 0px;
     width: 150px;
-    text-align: center;
     line-height: 90px;
     border-top: 2px solid transparent;
     text-decoration: none;
@@ -49,6 +63,13 @@ nav > a:hover {
 #research
 {
     margin-bottom: 1%;
+    padding: 0px 53.5px 0px 53.5px;
+}
+.titre h2{
+font-size: 1.35em;
+}
+.titre span {
+    line-height: 35px;
 }
 
 /*Section recherche*/
@@ -59,6 +80,8 @@ nav > a:hover {
     border-top-left-radius: 20%;
     border-bottom-left-radius: 20%;
     float: left;
+    height: 20px;
+    padding: 16px 15px 16px 15px;
 }
 
 #location {
@@ -72,11 +95,17 @@ nav > a:hover {
 #location_input {
     font-weight: bold;
     font-family: var(--font-family);
+    width: 216px;
+    border-top: 2px solid #F2F2F2;
+    border-left: 2px solid #F2F2F2;
+    border-bottom: 2px solid #F2F2F2;
+    padding-left: 17px;
+    font-size: 1.1em;
 }
 
 
 #search_location_button {
-    padding: 13px;
+    padding: 15px;
     background-color: #0065fc;
     color: var(--background-color);
     border-top-right-radius: 10%;
@@ -90,6 +119,31 @@ input::placeholder
     font-size: 15px;
 }
 
+@media screen and (min-width: 0px) and (max-width: 1407px){
+#zoneloupe {
+    padding: 15px 15px 12px 15px;
+    border-radius: 15px;
+}
+#location a{
+    display: none;
+}
+#zoneloupe{
+    color: white;
+    border-radius: 15px;
+    padding: 13px;
+    cursor: pointer;
+    background-color: #0065FC;
+    }
+#loupe{
+    height: 20px;
+}    
+
+}
+@media screen and (min-width: 1407px) {
+    #loupe{
+        display: none;}
+}
+
 /*Filtres */
 #filter_container{
     display: flex;
@@ -99,7 +153,8 @@ input::placeholder
     font-weight: 800;
 }
 h3{
-    margin-right: 10px;
+    margin: 43px 20px 20px 37px;
+    letter-spacing: 0.2px;
 }
 
 .icon1{
@@ -184,6 +239,7 @@ h3{
 #info {
     display: flex;
     align-items: center;
+    margin-top: 15px;
 }
 
 #info img {
@@ -199,10 +255,16 @@ h3{
 /* Hébergements */
 #hebergements_container {
     background-color: #F2F2F2;
-    padding: 10px 60px 10px;
+    padding: 10px 35px 10px;
     border-radius: 20px;
     width: 60%;
     max-width: 1000px;
+    margin-top: 36px;
+}
+
+h1{
+    margin: 43px 20px 20px 37px;
+    letter-spacing: 0.2px;
 }
 
 #hebergements_container_elements {
@@ -211,7 +273,8 @@ h3{
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
- 
+    margin: 43px 20px 20px 37px;
+    letter-spacing: 0.2px;
 }
 
 #hebergements_container_element>*
@@ -261,17 +324,18 @@ h3{
 
 .hebergements_container_item_info h2 {
     margin: 0;
-    font-size: medium;
+    font-size: 1em;
     word-wrap: break-word;
 }
 
-.hebergements_container_item_info p {
+.hebergements_container_item_info span {
     color: #555;
     width: 380px;
     margin: 8px 0;
     line-height: 1.25;
     text-overflow: ellipsis;
     overflow: hidden;
+    font-size: 0.9em;
 }
 
 
@@ -281,9 +345,10 @@ h3{
 #populaires_container {
     width: 30%;
     background-color: #F2F2F2;
-    padding: 10px 20px 35px;
+    padding: 10px 35px 10px;
     border-radius: 20px;
     box-sizing: border-box;
+    margin-top: 36px;
 }
 
 #populaires_container_elements {
@@ -298,6 +363,9 @@ h3{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+#populaires_container_header h1{
+    margin: 43px 20px 20px 0px
 }
 
 .populaires_container_item {
@@ -343,17 +411,18 @@ h3{
 
 .populaires_container_item_info h2 {
     margin: 0;
-    font-size: medium;
     overflow-wrap: break-word;
+    font-size: 1em;
 }
 
-.populaires_container_item_info p {
+.populaires_container_item_info span {
     color: #555;
     width: 380px;
     margin: 8px 0;
     line-height: 1.25;
     text-overflow: ellipsis;
     overflow: hidden;
+    font-size: 1em;
 }
 
 
@@ -368,6 +437,11 @@ h3{
 /* Actvité*/
 #activites_container {
     padding: 0px;
+}
+
+#activites_container h1 {
+    padding: 24px 20px 20px 0px;
+    margin: 43px 20px 20px 0px;
 }
 
 #activites_container_elements {
@@ -430,22 +504,24 @@ li {
 
 footer {
     background-color: #F2F2F2;
-    /*height: 20vh;*/
-
     display: flex;
-    padding: 20px 40px;
     column-gap: 10%;
     width: 100%;
-    margin-top: 25px;
-    
+    margin-top: 52px;
+    padding: 24px 20px 20px 60px;    
 }
 
 .footer_category {
     width: 20%
 }
 
-footer div h1 {
-    font-size: 20px;
+footer h1 {
+    font-size: 16px;
+    margin: 0px 0px 20px 0px;
+}
+
+footer a {
+    font-size: 14px;
 }
 
 
@@ -536,7 +612,7 @@ footer div h1 {
     {
             padding: 0px;
             column-gap: 10%;
-            font-size: 14px;
+            font-size: 16px;
     }
     .footer_category
     {
@@ -556,9 +632,6 @@ footer div h1 {
     #header{
         display: flex;
         flex-direction: column;
-    }
-    #logo{
-        padding-left: 28%;
     }
     nav {
             font-weight: 500;
@@ -584,7 +657,8 @@ footer div h1 {
         margin-bottom: 5%;
     }
     .titre {
-        padding-left: 20px;
+        padding-left: 0px;
+        white-space: normal;
     }
     .titre h2
     {
@@ -673,10 +747,11 @@ footer div h1 {
     footer
     {
 
-            font-size: 22px;
+            width: 100%;
             justify-content: center;
             flex-direction: column;
             padding: 0px;
+            margin-left: 12px;
         }
     .footer_category
     {
