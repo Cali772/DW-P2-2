@@ -26,7 +26,7 @@ a:hover {
     color: #0065FC;
 }
 #bloc_page{
-    padding: 0px 53.5px 0px 53.5px;
+    padding: 0px 45.5px 0px 45.5px;
 }
 #header{
     display: flex;
@@ -273,7 +273,7 @@ h1{
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-    margin: 43px 20px 20px 37px;
+    margin: 29px 0px 15px 0px;
     letter-spacing: 0.2px;
 }
 
@@ -286,7 +286,7 @@ h1{
 .hebergements_container_item {
    
     height: 210px;
-    width: 30%;
+    width: 29%;
     position: relative;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     transition: all 450ms ease-out 0s;
@@ -330,12 +330,13 @@ h1{
 
 .hebergements_container_item_info span {
     color: #555;
-    width: 380px;
+    width: 100%;
     margin: 8px 0;
     line-height: 1.25;
     text-overflow: ellipsis;
     overflow: hidden;
     font-size: 0.9em;
+    word-wrap: break-word;
 }
 
 
@@ -402,8 +403,6 @@ h1{
     padding: 2.5px 10px;
     overflow: hidden;
     transition: all 450ms ease-in-out 0s;
-    
-
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -417,12 +416,13 @@ h1{
 
 .populaires_container_item_info span {
     color: #555;
-    width: 380px;
+    width: 100%;
     margin: 8px 0;
     line-height: 1.25;
     text-overflow: ellipsis;
     overflow: hidden;
     font-size: 1em;
+    word-wrap: break-word;
 }
 
 
@@ -487,6 +487,47 @@ h1{
 }
 
 .activites_container_item_info p {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+.activites_container_item1{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: all 450ms ease-out 0s;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.activites_container_item1:hover {
+    transform: translate(0, -10px);
+}
+
+.activites_container_item1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.activites_container_item_info1 {
+    position: relative;
+    background-color: var(--background-color);
+    width: 100%;
+    height: 65px;
+    top: -65px;
+    box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.2);
+    padding: 8px 12px;
+    overflow: hidden;
+    transition: all 450ms ease-in-out 0s;
+}
+
+.activites_container_item_info1 p {
     margin: 0;
     font-size: 1.2em;
     font-weight: bold;
@@ -757,8 +798,11 @@ footer a {
     {
             width: 100%;
     }
+
+    
     
     }
+
 
 
 
