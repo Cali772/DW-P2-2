@@ -143,7 +143,6 @@ h3{
     border-bottom: 2px solid #F2F2F2;
     border-right: 2px solid #F2F2F2;
     border-radius: 50px;;
-    font-size: 17px;
     margin-right: 25px;
     margin-left: 20px;
     padding: 12px;
@@ -162,7 +161,6 @@ h3{
     border-bottom: 2px solid #F2F2F2;
     border-right: 2px solid #F2F2F2;
     border-radius: 50px;
-    font-size: 17px;
     margin-right: 25px;
     padding: 12px;
     padding-left: 0px;
@@ -180,7 +178,6 @@ h3{
     border-bottom: 2px solid #F2F2F2;
     border-right: 2px solid #F2F2F2;
     border-radius: 50px;
-    font-size: 17px;
     margin-right: 25px;
     padding: 12px;
     padding-left: 0px;
@@ -198,7 +195,6 @@ h3{
     border-bottom: 2px solid #F2F2F2;
     border-right: 2px solid #F2F2F2;
     border-radius: 50px;
-    font-size: 17px;
     margin-right: 25px;
     padding: 12px;
     padding-left: 0%;
@@ -427,9 +423,9 @@ h1{
 
 #activites_container_elements {
     display: grid;
-    grid-template-columns: 24% 22% 25% 22%;
+    grid-template-columns: 21% 21% 21% 21%;
     grid-template-rows: 250px 250px;
-    gap: 30px
+    gap: 5%;
     
 }
 
@@ -598,7 +594,6 @@ footer a {
             gap: 20px;
             padding-right: 20px;
             border-radius: 20px;
-            font-size: 17px;
     }
         
     .filter_item img 
@@ -832,7 +827,20 @@ footer a {
     }
 }
 
-@media (min-width: 993px) and (max-width: 1230px) /*Mode Tablet */
+@media (min-width: 993px) and (max-width: 1230px) /*Mode Small screen */
 {
 
+    .container{
+        gap: 10px;
+        font-size: 0.85em;
+    }
+
+    #hebergements_container{
+        width: 70%;
+        padding: 10px 15px;
+    }
+
+    #populaires_container{
+        padding: 10px 15px;
+    }
 }
