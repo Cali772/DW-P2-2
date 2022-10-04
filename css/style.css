@@ -549,7 +549,7 @@ footer a {
 
 
 /** Responsive **/
-@media screen and (min-width: 0px) and (max-width: 1407px){
+@media screen and (min-width: 0px) and (max-width: 768px){
     #zoneloupe {
         padding: 15px 15px 12px 15px;
         border-radius: 15px;
@@ -568,6 +568,12 @@ footer a {
         height: 20px;
     }    
     
+}
+@media screen and (min-width: 768px) and (max-width: 1407px)
+{
+    #zoneloupe{
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1407px) {
@@ -711,14 +717,19 @@ footer a {
     {
         margin-top: 2%;
         margin-bottom: 5%;
+        padding: 0 0 0 25px;
     }
     .titre {
-        padding-left: 0px;
+        padding: 0px;
         white-space: normal;
     }
     .titre h2
     {
-            font-size: 20px;
+        padding-top: 20px;    
+        font-size: 1.4em;
+    }
+    .titre span{
+        font-size: 1.1em;
     }
     #filter_container 
     {
@@ -899,5 +910,15 @@ footer a {
 
     #populaires_container{
         padding: 10px 15px;
+    }
+    #activites_container_elements {
+        grid-template-columns: 21% 21% 21% 21%;
+        grid-template-rows: 180px 180px;
+        gap: 5%;
+    }
+    .activites_container_item_info p {
+        margin: 0;
+        font-size: 1em;
+        font-weight: bold;
     }
 }
