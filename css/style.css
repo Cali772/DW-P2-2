@@ -34,6 +34,9 @@ a:hover {
 #bloc_page{
     padding: 0px 20px 0px 20px;
 }
+
+/*Header*/
+
 #header{
     display: flex;
     justify-content: space-between;
@@ -79,6 +82,7 @@ font-size: 1.35em;
 }
 
 /*Section recherche*/
+
 #location_icon {
     height: 26px;
     padding: 10px;
@@ -130,6 +134,7 @@ input::placeholder
 }
 
 /*Filtres */
+
 #filter_container{
     display: flex;
     flex-wrap: wrap;
@@ -218,6 +223,7 @@ h3{
 
 
 /*Point Info*/
+
 #info {
     display: flex;
     align-items: center;
@@ -235,6 +241,7 @@ h3{
 }
 
 /* Hébergements */
+
 #hebergements_container {
     background-color: #F2F2F2;
     padding: 10px 15px 10px;
@@ -417,6 +424,7 @@ h1{
 }
 
 /* Actvité*/
+
 /*#activites_container {
     padding: 0px;
 }
@@ -536,6 +544,16 @@ h1{
     height: 55%;
     width: calc((100% - 50px) / 4);
 }
+.ce-end-card{
+    height: 210px;
+    width: calc((100% - 50px) / 4);   
+}
+.ce-end-card2{
+    height: 210px;
+    width: 100%;
+    margin-top: 55px;
+}
+
 .ce-little-card {
     height:35%;
     width: calc((100% - 50px) / 4);
@@ -568,6 +586,7 @@ h1{
 
 
     /*Footer*/
+
 ul {
     list-style: none;
     padding-left: 0;
@@ -591,16 +610,17 @@ footer {
 }
 
 footer h1 {
-    font-size: 19px;
-    margin: 0px 0px 20px 0px;
+    font-size: 20px;
+    margin: 20px 0px 20px 0px;
 }
 
 footer a {
-    font-size: 16px;
+    font-size: 15px;
 }
 
 
 /** Responsive **/
+
 @media screen and (min-width: 0px) and (max-width: 768px){
     #zoneloupe {
         padding: 15px 15px 12px 15px;
@@ -619,6 +639,19 @@ footer a {
     #loupe{
         height: 20px;
     }    
+    .ce-end-card{
+        height: 200px;
+        width: 100%;   
+    }
+    .ce-end-card2{
+        height: 200px;
+        width: 100%;
+        margin-top: 55px;
+    }
+    footer{
+        flex-direction: column;
+    }
+
 }
 @media screen and (min-width: 769px) and (max-width: 1407px)
 {
@@ -912,9 +945,7 @@ footer a {
 
             width: 100%;
             justify-content: center;
-            flex-direction: column;
-            text-align: center;
-            padding: 20px 0px 20px 0px;
+            padding: 20px 0px 20px 20px;
         }
     .footer_category
     {
@@ -950,6 +981,7 @@ footer a {
 
     #hebergements_container{
         width: 100%;
+        padding: 0px 40px 0px 40px;
     }
     .hebergements_container_item_info h2 {
         font-size: 0.9em;
@@ -1002,6 +1034,18 @@ footer a {
         width: 100%;
         margin: 0%;
     }
+    .ce-end-card{
+        height: 200px;
+        width: 100%;   
+    }
+    .ce-end-card2{
+        height: 200px;
+        width: 100%;
+        margin-top: 55px;
+    }
+    #activites{
+        padding: 0px 50px 0px 50px;
+    }
 
     footer{
         margin-top: 0px;
@@ -1034,5 +1078,17 @@ footer a {
         font-size: 1em;
         font-weight: bold;
     }*/
+
+}
+
+@media (min-width: 550px) and (max-width: 768px){
+
+    footer{
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        display: flex;
+        text-align: center;
+    }
 
 }
