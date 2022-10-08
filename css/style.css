@@ -245,7 +245,7 @@ h3{
 }
 
 h1{
-    margin: 43px 20px 20px 0px;
+    margin: 25px 20px 20px 0px;
     letter-spacing: 0.2px;
 }
 
@@ -348,7 +348,7 @@ h1{
     justify-content: space-between;
 }
 #populaires_container_header h1{
-    margin: 43px 20px 20px 0px
+    margin: 25px 20px 20px 0px
 }
 
 .populaires_container_item {
@@ -379,7 +379,7 @@ h1{
 .populaires_container_item_info {
     position: relative;
     background-color: var(--background-color);
-    width: 80%;
+    width: 60%;
     height: 100%;
     left: 40%;
     padding: 2.5px 10px;
@@ -417,7 +417,7 @@ h1{
 }
 
 /* Actvité*/
-#activites_container {
+/*#activites_container {
     padding: 0px;
 }
 
@@ -513,7 +513,59 @@ h1{
     margin: 0;
     font-size: 1.2em;
     font-weight: bold;
+}*/
+
+.card-body2a p {
+    margin: 6px 0px 0px 8px;
+    font-size: 15px;
+    font-weight: bold;
 }
+.container-evenements {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    height: 450px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.ce-full-card {
+    height: 100%;
+    width: calc((100% - 300px) / 4);
+}
+.ce-middle-card {
+    height: 55%;
+    width: calc((100% - 50px) / 4);
+}
+.ce-little-card {
+    height:35%;
+    width: calc((100% - 50px) / 4);
+    margin-top: 45px;
+}
+.ce-card {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    cursor: pointer;
+}
+.container-evenements img {
+    width: 100%;
+    height: calc(100% - 55px);
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+.marged-content {
+    margin: 26px 48px 0px 48px;
+}
+#activites{
+    margin-bottom: 4%;
+}
+
+#activites h1 {
+    margin: 0px;
+    font-size: 1.3em;
+    font-weight: bold;
+    
+}
+
 
     /*Footer*/
 ul {
@@ -539,12 +591,12 @@ footer {
 }
 
 footer h1 {
-    font-size: 16px;
+    font-size: 19px;
     margin: 0px 0px 20px 0px;
 }
 
 footer a {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 
@@ -567,9 +619,8 @@ footer a {
     #loupe{
         height: 20px;
     }    
-    
 }
-@media screen and (min-width: 768px) and (max-width: 1407px)
+@media screen and (min-width: 769px) and (max-width: 1407px)
 {
     #zoneloupe{
         display: none;
@@ -631,13 +682,13 @@ footer a {
             width: 600px;
             height: 550px;
     }
-    #activites_container 
+    /*#activites_container 
     {
             padding: 0px;
             display: flex;
             flex-direction: column;
     }
-    /*#activites_container_elements 
+    #activites_container_elements 
     {       
             grid-template-columns: repeat(4,25%);
             display: grid;
@@ -646,13 +697,13 @@ footer a {
             gap: 5px;
             font-size: small;
     }*/
-    .activites_container_item_info
+    /*.activites_container_item_info
     {       
             width: 100%;
             height: 50px;
             top: -50px;
             padding: 1px 5px;
-    }
+    }*/
     .container
     {       
             flex-direction: column;
@@ -798,7 +849,7 @@ footer a {
     }
 
 
-   #activites_container h1
+   /*#activites_container h1
    {
     margin: 15px;
    }
@@ -816,10 +867,44 @@ footer a {
             height: 50px;
             top: -50px;
             padding: 5px 5px;
-    }
+    }*/
     .container
     {       
             flex-direction: column-reverse;
+    }
+
+    .container-evenements{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
+        display:flex;
+        height: 1500px;
+        font-size: medium;
+        margin-top: 30px;
+        gap: 30px;
+    }
+
+    .ce-full-card{
+        height: 200px;
+        width: 100%; 
+    }
+    .ce-middle-card{
+        height: 200px;
+        width: 100%;
+       
+    }
+    .ce-little-card{
+        height: 200px;
+        width: 100%;
+        margin: 0%;
+    }
+    .marged-content {
+        margin: 25px 25px 0px 25px;
+    }
+
+    footer{
+        margin-top: 0px;
     }
 
     footer
@@ -883,16 +968,44 @@ footer a {
         padding-left: 20%;
     }
 
-    #activites_container_elements {
+   /* #activites_container_elements {
         grid-template-columns: 21% 21% 21% 21%;
         grid-template-rows: 200px 200px;
         gap: 5%;
     }
     .activites_container_item_info p {
         font-size: 1em;
+    }*/
+    .container-evenements{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
+        display:flex;
+        height: 1500px;
+        font-size: medium;
+        margin-top: 30px;
+        gap: 30px;
     }
-    
 
+    .ce-full-card{
+        height: 200px;
+        width: 100%; 
+    }
+    .ce-middle-card{
+        height: 200px;
+        width: 100%;
+       
+    }
+    .ce-little-card{
+        height: 200px;
+        width: 100%;
+        margin: 0%;
+    }
+
+    footer{
+        margin-top: 0px;
+    }
 }
 
 @media (min-width: 993px) and (max-width: 1230px) /*Mode Small screen */
@@ -911,7 +1024,7 @@ footer a {
     #populaires_container{
         padding: 10px 15px;
     }
-    #activites_container_elements {
+    /*#activites_container_elements {
         grid-template-columns: 21% 21% 21% 21%;
         grid-template-rows: 180px 180px;
         gap: 5%;
@@ -920,5 +1033,6 @@ footer a {
         margin: 0;
         font-size: 1em;
         font-weight: bold;
-    }
+    }*/
+
 }
